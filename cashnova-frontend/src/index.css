@@ -328,11 +328,16 @@ img {
     max-width: clamp(390px, 25vw, 430px);
   }
 
+  .auth-panel {
+    transform: scale(0.92);
+    transform-origin: center right;
+  }
+
   .auth-visual {
     left: clamp(3rem, 9vw, 12rem);
     width: clamp(560px, 38vw, 720px);
     height: clamp(460px, 52vh, 590px);
-    transform: translateX(0);
+    transform: translateX(0) scale(0.92);
     transform-origin: left bottom;
   }
 }
@@ -378,7 +383,7 @@ img {
 
   .auth-visual {
     bottom: 1.25rem;
-    transform: scale(0.86);
+    transform: scale(0.84);
   }
 }
 

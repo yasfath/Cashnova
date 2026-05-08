@@ -489,7 +489,7 @@ img {
   }
 
   .sidebar-brand-wordmark {
-    font-size: clamp(1.45rem, 1.75vw, 1.75rem);
+    font-size: clamp(1.25rem, 1.45vw, 1.45rem);
   }
 
   .sidebar-nav {
@@ -497,12 +497,21 @@ img {
   }
 
   .theme-sidebar-kicker {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
     margin-bottom: 0.55rem;
   }
 
   .theme-sidebar-link {
-    padding-bottom: 0.65rem;
-    padding-top: 0.65rem;
+    font-size: 0.92rem;
+    gap: 0.55rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .theme-sidebar-link svg {
+    height: 1.05rem;
+    width: 1.05rem;
   }
 
   .theme-page {
@@ -533,12 +542,43 @@ img {
   .dashboard-analytics-card h3,
   .dashboard-sales-card h3,
   .dashboard-recent-card h3 {
-    font-size: 0.92rem;
+    font-size: 0.82rem;
   }
 
   .dashboard-stat-card p[class*="text-[28px]"] {
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     line-height: 1.15;
+  }
+
+  .theme-page h1 {
+    font-size: 1.35rem;
+  }
+
+  .theme-page h2 {
+    font-size: 1.15rem;
+  }
+
+  .theme-page h3 {
+    font-size: 0.95rem;
+  }
+
+  .theme-page p,
+  .theme-page label,
+  .theme-page input,
+  .theme-page select,
+  .theme-page textarea,
+  .theme-page button,
+  .theme-page td,
+  .theme-page th {
+    font-size: 0.82rem;
+  }
+
+  .theme-page .text-sm {
+    font-size: 0.78rem;
+  }
+
+  .theme-page .text-xs {
+    font-size: 0.68rem;
   }
 
   .dashboard-stat-card .mt-4 {

@@ -60,7 +60,7 @@ const toneMap = {
 };
 
 const sectionCardClass =
-  "theme-card rounded-[28px] p-5 shadow-[0_20px_48px_rgba(19,52,72,0.08)] sm:p-6";
+  "theme-card rounded-[22px] p-5 shadow-[0_18px_40px_rgba(19,52,72,0.08)]";
 
 const getCategoryAmount = (entries, aliases) =>
   entries.reduce((total, entry) => {
@@ -70,18 +70,18 @@ const getCategoryAmount = (entries, aliases) =>
 
 const RecommendationCard = ({ title, description, badge, icon: Icon, iconWrap, badgeStyle }) => {
   return (
-    <div className="theme-panel rounded-[24px] p-5 shadow-[0_12px_30px_rgba(19,52,72,0.06)] transition duration-200 hover:-translate-y-[2px] hover:shadow-[0_18px_34px_rgba(19,52,72,0.1)]">
-      <div className="flex items-start gap-4">
+    <div className="theme-panel rounded-[20px] p-4 shadow-[0_10px_24px_rgba(19,52,72,0.05)] transition duration-200 hover:-translate-y-[2px] hover:shadow-[0_16px_30px_rgba(19,52,72,0.08)]">
+      <div className="flex items-start gap-3">
         <div
-          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] ${iconWrap}`}
+          className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] ${iconWrap}`}
         >
-          <Icon size={20} />
+          <Icon size={17} />
         </div>
 
         <div className="min-w-0 flex-1">
-          <h3 className="text-[20px] font-bold tracking-[-0.02em] text-[#12303f]">{title}</h3>
-          <p className="mt-2 text-sm leading-6 text-[#647c8a]">{description}</p>
-          <span className={`mt-4 inline-flex rounded-full px-3 py-1 text-xs font-semibold ${badgeStyle}`}>
+          <h3 className="text-[16px] font-bold tracking-[-0.02em] text-[#12303f]">{title}</h3>
+          <p className="mt-2 text-[12px] leading-5 text-[#647c8a]">{description}</p>
+          <span className={`mt-3 inline-flex rounded-full px-3 py-1 text-[10px] font-semibold ${badgeStyle}`}>
             {badge}
           </span>
         </div>
@@ -94,14 +94,14 @@ const CategoryBar = ({ label, value, status, bar, text }) => {
   return (
     <div className="space-y-2">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <span className="text-[17px] font-semibold text-[#12303f]">{label}</span>
-        <span className={`text-sm font-semibold ${text}`}>
+        <span className="text-[13px] font-semibold text-[#12303f]">{label}</span>
+        <span className={`text-[11px] font-semibold ${text}`}>
           {status} - {Math.round(value)}%
         </span>
       </div>
-      <div className="h-3 overflow-hidden rounded-full bg-[rgba(207,221,228,0.65)]">
+      <div className="h-2.5 overflow-hidden rounded-full bg-[rgba(207,221,228,0.65)]">
         <div
-          className="h-3 rounded-full shadow-[0_8px_18px_rgba(19,52,72,0.12)] transition-all duration-300"
+          className="h-2.5 rounded-full shadow-[0_8px_18px_rgba(19,52,72,0.12)] transition-all duration-300"
           style={{
             width: `${Math.max(value, value > 0 ? 10 : 0)}%`,
             background: bar,
@@ -253,19 +253,19 @@ const AIInsights = () => {
 
   return (
     <PageContainer>
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)]">
-        <section className="space-y-5">
+      <div className="grid gap-4 xl:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)]">
+        <section className="space-y-4">
           <div className={sectionCardClass}>
-            <div className="mb-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#6f8795]">
+            <div className="mb-4">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#6f8795]">
                 Smart Layer
               </p>
-              <h3 className="mt-2 text-[24px] font-bold tracking-[-0.03em] text-[#12303f]">
+              <h3 className="mt-2 text-[18px] font-bold tracking-[-0.03em] text-[#12303f]">
                 AI Recommendations
               </h3>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               {insightState.recommendationCards.map((item) => (
                 <RecommendationCard key={item.title} {...item} />
               ))}
@@ -273,32 +273,32 @@ const AIInsights = () => {
           </div>
         </section>
 
-        <section className="space-y-5">
+        <section className="space-y-4">
           <div className={sectionCardClass}>
             <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#6f8795]">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#6f8795]">
                   Pattern Radar
                 </p>
-                <h3 className="mt-2 text-[24px] font-bold tracking-[-0.03em] text-[#12303f]">
+                <h3 className="mt-2 text-[18px] font-bold tracking-[-0.03em] text-[#12303f]">
                   Spending Pattern Analysis
                 </h3>
-                <p className="mt-1 text-sm text-[#647c8a]">
+                <p className="mt-1 text-[12px] text-[#647c8a]">
                   Live category signals refresh as soon as entries are added or updated.
                 </p>
               </div>
-              <span className="theme-panel inline-flex rounded-full px-3 py-1 text-xs font-semibold text-[#647c8a]">
+              <span className="theme-panel inline-flex rounded-full px-3 py-1 text-[10px] font-semibold text-[#647c8a]">
                 {insightState.recordCount} Records
               </span>
             </div>
 
-            <div className="theme-panel relative h-[320px] rounded-[24px] p-4 sm:p-5">
+            <div className="theme-panel relative h-[260px] rounded-[20px] p-4">
               <ResponsiveContainer width="100%" height="100%">
                 <RadarChart data={insightState.spendingPatternData} outerRadius="68%">
                   <PolarGrid stroke="rgba(116,149,165,0.24)" />
                   <PolarAngleAxis
                     dataKey="category"
-                    tick={{ fill: "#647c8a", fontSize: 12, fontWeight: 600 }}
+                    tick={{ fill: "#647c8a", fontSize: 10, fontWeight: 600 }}
                   />
                   <PolarRadiusAxis
                     angle={90}
@@ -328,8 +328,8 @@ const AIInsights = () => {
               {insightState.recordCount === 0 && (
                 <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
                   <div className="theme-card rounded-2xl px-4 py-3 text-center">
-                    <p className="text-sm font-semibold text-[#12303f]">0 records connected</p>
-                    <p className="mt-1 text-xs text-[#647c8a]">
+                    <p className="text-[12px] font-semibold text-[#12303f]">0 records connected</p>
+                    <p className="mt-1 text-[10px] text-[#647c8a]">
                       Add entries to activate the radar.
                     </p>
                   </div>
@@ -337,20 +337,20 @@ const AIInsights = () => {
               )}
             </div>
 
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              <div className="theme-panel rounded-[20px] px-4 py-3">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6f8795]">
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <div className="theme-panel rounded-[16px] px-4 py-3">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#6f8795]">
                   Current Spend
                 </p>
-                <p className="mt-2 text-2xl font-bold text-[#12303f]">
+                <p className="mt-2 text-[18px] font-bold text-[#12303f]">
                   {insightState.currentSpend}%
                 </p>
               </div>
-              <div className="theme-panel rounded-[20px] px-4 py-3">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6f8795]">
+              <div className="theme-panel rounded-[16px] px-4 py-3">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#6f8795]">
                   Budget Signal
                 </p>
-                <p className="mt-2 text-2xl font-bold text-[#12303f]">
+                <p className="mt-2 text-[18px] font-bold text-[#12303f]">
                   {insightState.budgetSignal}
                 </p>
               </div>
@@ -358,19 +358,19 @@ const AIInsights = () => {
           </div>
 
           <div className={sectionCardClass}>
-            <div className="mb-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#6f8795]">
+            <div className="mb-4">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#6f8795]">
                 Health Check
               </p>
-              <h3 className="mt-2 text-[24px] font-bold tracking-[-0.03em] text-[#12303f]">
+              <h3 className="mt-2 text-[18px] font-bold tracking-[-0.03em] text-[#12303f]">
                 Category Health Check
               </h3>
-              <p className="mt-1 text-sm text-[#647c8a]">
+              <p className="mt-1 text-[12px] text-[#647c8a]">
                 These bars stay synced with the same entry data powering your dashboard and reports.
               </p>
             </div>
 
-            <div className="space-y-5">
+            <div className="space-y-4">
               {insightState.categoryHealth.map((item) => (
                 <CategoryBar key={item.label} {...item} />
               ))}

@@ -55,25 +55,25 @@ const RingCard = ({ title, value, sub1, sub2, progress = 0, tint = "purple" }) =
   const safeProgress = clamp(progress, 0, 100);
 
   return (
-    <div className="theme-card rounded-[28px] p-6 text-center transition duration-200 hover:-translate-y-[3px] hover:shadow-[0_20px_46px_rgba(19,52,72,0.1)] active:scale-[0.985]">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#6f8795]">{title}</p>
+    <div className="theme-card rounded-[22px] p-5 text-center transition duration-200 hover:-translate-y-[2px] hover:shadow-[0_18px_36px_rgba(19,52,72,0.08)] active:scale-[0.985]">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#6f8795]">{title}</p>
 
       <div
-        className={`relative mx-auto mb-5 mt-5 flex h-[120px] w-[120px] items-center justify-center rounded-full bg-gradient-to-br ${palette.track} ${palette.glow}`}
+        className={`relative mx-auto mb-4 mt-4 flex h-[92px] w-[92px] items-center justify-center rounded-full bg-gradient-to-br ${palette.track} ${palette.glow}`}
         style={{
           backgroundImage: `conic-gradient(${palette.accent} ${safeProgress * 3.6}deg, rgba(224,235,240,0.86) 0deg)`,
         }}
       >
         <div className="absolute inset-[10px] rounded-full bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(244,249,250,0.9))] shadow-[inset_0_1px_0_rgba(255,255,255,0.85)]" />
         <div className="relative">
-          <span className="text-[28px] font-extrabold tracking-[-0.04em] text-[#12303f]">
+          <span className="text-[22px] font-extrabold tracking-[-0.04em] text-[#12303f]">
             {value}
           </span>
         </div>
       </div>
 
-      <p className="text-lg font-bold text-[#173847]">{sub1}</p>
-      <p className="mt-1 text-sm leading-6 text-[#647c8a]">{sub2}</p>
+      <p className="text-[14px] font-bold text-[#173847]">{sub1}</p>
+      <p className="mx-auto mt-1 max-w-[300px] text-[12px] leading-5 text-[#647c8a]">{sub2}</p>
     </div>
   );
 };
@@ -82,36 +82,36 @@ const TopLineChart = ({ points, summaryLabel, currentBalance, forecastNet }) => 
   const baselineY = 186;
 
   return (
-    <div className="theme-card rounded-[28px] p-5 transition duration-200 hover:-translate-y-[3px] hover:shadow-[0_22px_48px_rgba(19,52,72,0.1)] active:scale-[0.985] sm:p-6">
-      <div className="mb-5 flex flex-wrap items-start justify-between gap-4">
+    <div className="theme-card rounded-[22px] p-5 transition duration-200 hover:-translate-y-[2px] hover:shadow-[0_20px_42px_rgba(19,52,72,0.08)] active:scale-[0.985]">
+      <div className="mb-4">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#6f8795]">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#6f8795]">
             Forecast View
           </p>
-          <h3 className="mt-2 text-[22px] font-bold tracking-[-0.03em] text-[#12303f]">
+          <h3 className="mt-2 text-[18px] font-bold tracking-[-0.03em] text-[#12303f]">
             Balance Forecast - Next 90 Days
           </h3>
-          <p className="mt-2 max-w-[420px] text-sm leading-6 text-[#647c8a]">{summaryLabel}</p>
+          <p className="mt-2 max-w-[430px] text-[12px] leading-5 text-[#647c8a]">{summaryLabel}</p>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          <div className="theme-panel rounded-[20px] px-4 py-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6f8795]">
+        <div className="mt-4 grid max-w-[290px] gap-3 sm:grid-cols-2">
+          <div className="theme-panel rounded-[16px] px-4 py-3">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#6f8795]">
               Current balance
             </p>
-            <p className="mt-2 text-xl font-bold text-[#12303f]">{currentBalance}</p>
+            <p className="mt-2 text-[16px] font-bold text-[#12303f]">{currentBalance}</p>
           </div>
-          <div className="theme-panel rounded-[20px] px-4 py-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#6f8795]">
+          <div className="theme-panel rounded-[16px] px-4 py-3">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#6f8795]">
               Forecast net
             </p>
-            <p className="mt-2 text-xl font-bold text-[#1F5F7A]">{forecastNet}</p>
+            <p className="mt-2 text-[16px] font-bold text-[#1F5F7A]">{forecastNet}</p>
           </div>
         </div>
       </div>
 
-      <div className="theme-panel rounded-[24px] p-4 sm:p-5">
-        <div className="mb-3 flex items-center gap-3 text-xs font-semibold text-[#647c8a]">
+      <div className="theme-panel rounded-[20px] p-4">
+        <div className="mb-3 flex items-center gap-3 text-[11px] font-semibold text-[#647c8a]">
           <span className="inline-flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-[#1F5F7A]" />
             Forecast balance
@@ -122,7 +122,7 @@ const TopLineChart = ({ points, summaryLabel, currentBalance, forecastNet }) => 
           </span>
         </div>
 
-        <svg viewBox="0 0 520 220" className="h-[240px] w-full overflow-visible">
+        <svg viewBox="0 0 520 220" className="h-[185px] w-full overflow-visible">
           <defs>
             <linearGradient id="predictionArea" x1="0" x2="0" y1="0" y2="1">
               <stop offset="0%" stopColor="#1F5F7A" stopOpacity="0.24" />
@@ -180,7 +180,7 @@ const TopLineChart = ({ points, summaryLabel, currentBalance, forecastNet }) => 
           ))}
         </svg>
 
-        <div className="mt-3 grid grid-cols-8 text-center text-xs font-semibold text-[#647c8a]">
+        <div className="mt-2 grid grid-cols-8 text-center text-[10px] font-semibold text-[#647c8a]">
           {points.map((point) => (
             <span key={point.label}>{point.label}</span>
           ))}
@@ -192,31 +192,31 @@ const TopLineChart = ({ points, summaryLabel, currentBalance, forecastNet }) => 
 
 const SpendingVelocity = ({ bars, formatCurrency, maxExpense }) => {
   return (
-    <div className="theme-card rounded-[28px] p-5 transition duration-200 hover:-translate-y-[3px] hover:shadow-[0_22px_48px_rgba(19,52,72,0.1)] active:scale-[0.985] sm:p-6">
-      <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+    <div className="theme-card rounded-[22px] p-5 transition duration-200 hover:-translate-y-[2px] hover:shadow-[0_20px_42px_rgba(19,52,72,0.08)] active:scale-[0.985]">
+      <div className="mb-5 flex flex-wrap items-start justify-between gap-3">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#6f8795]">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#6f8795]">
             Weekly Motion
           </p>
-          <h3 className="mt-2 text-[22px] font-bold tracking-[-0.03em] text-[#12303f]">
+          <h3 className="mt-2 text-[18px] font-bold tracking-[-0.03em] text-[#12303f]">
             Spending Velocity
           </h3>
         </div>
-        <div className="theme-panel rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#647c8a]">
+        <div className="theme-panel rounded-full px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#647c8a]">
           Max {formatCurrency(maxExpense)}
         </div>
       </div>
 
-      <div className="theme-panel rounded-[24px] p-4 sm:p-5">
-        <div className="flex h-[270px] items-end justify-between gap-4">
+      <div className="theme-panel rounded-[20px] p-4">
+        <div className="flex h-[190px] items-end justify-between gap-4">
           {bars.map((bar, index) => (
             <div key={bar.label} className="flex flex-1 flex-col items-center gap-3">
-              <div className="flex h-[220px] w-full items-end rounded-[20px] bg-[linear-gradient(180deg,rgba(255,255,255,0.45),rgba(229,238,242,0.7))] p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)]">
+              <div className="flex h-[150px] w-full items-end rounded-[18px] bg-[linear-gradient(180deg,rgba(255,255,255,0.46),rgba(229,238,242,0.74))] p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)]">
                 <div
-                  className="relative w-full overflow-hidden rounded-[16px] shadow-[0_14px_28px_rgba(19,52,72,0.12)]"
+                  className="relative w-full overflow-hidden rounded-full shadow-[0_10px_18px_rgba(19,52,72,0.12)]"
                   style={{
-                    height: `${bar.height}%`,
-                    minHeight: bar.height > 0 ? "22px" : "12px",
+                    height: bar.height > 0 ? `${Math.max(bar.height * 0.18, 7)}%` : "7%",
+                    minHeight: "8px",
                     background:
                       index % 2 === 0
                         ? "linear-gradient(180deg, #0F7C82 0%, #1F5F7A 100%)"
@@ -227,8 +227,8 @@ const SpendingVelocity = ({ bars, formatCurrency, maxExpense }) => {
                 </div>
               </div>
               <div className="text-center">
-                <p className="text-sm font-semibold text-[#12303f]">{bar.label}</p>
-                <p className="mt-1 text-xs font-medium text-[#647c8a]">
+                <p className="text-[12px] font-semibold text-[#12303f]">{bar.label}</p>
+                <p className="mt-1 text-[10px] font-medium text-[#647c8a]">
                   {formatCurrency(bar.value)}
                 </p>
               </div>
@@ -345,8 +345,8 @@ const AIPredictions = () => {
 
   return (
     <PageContainer>
-      <div className="space-y-5">
-        <div className="grid gap-5 xl:grid-cols-2">
+      <div className="space-y-4">
+        <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
           <TopLineChart
             points={predictionState.forecastPoints}
             summaryLabel={predictionState.summaryLabel}
@@ -360,7 +360,7 @@ const AIPredictions = () => {
           />
         </div>
 
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-3">
           <RingCard
             title="Runway Estimate"
             value={

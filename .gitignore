@@ -4,3 +4,11 @@ db.sqlite3
 __pycache__/
 *.pyc
 .env
+cashnova_backend/.env
+cashnova-frontend/.env
+*.env
+
+node_modules/
+dist/
+venv/
+.venv/

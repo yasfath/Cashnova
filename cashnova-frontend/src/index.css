@@ -327,7 +327,8 @@ img {
   }
 
   .auth-main {
-    padding-right: clamp(4rem, 11vw, 16rem);
+    align-items: center;
+    padding-right: clamp(6rem, 13vw, 18rem);
   }
 
   .auth-panel {
@@ -335,8 +336,8 @@ img {
   }
 
   .auth-visual {
-    left: clamp(6rem, 18vw, 22rem);
-    bottom: clamp(10rem, 24vh, 16rem);
+    left: clamp(8rem, 19vw, 23rem);
+    bottom: clamp(12rem, 28vh, 18rem);
     width: clamp(560px, 38vw, 720px);
     height: clamp(460px, 52vh, 590px);
     transform: translateX(0);
@@ -346,11 +347,11 @@ img {
 
 @media (min-width: 1280px) {
   .auth-main {
-    padding-right: clamp(7rem, 15vw, 21rem);
+    padding-right: clamp(8rem, 15vw, 20rem);
   }
 
   .auth-visual {
-    left: clamp(7rem, 21vw, 24rem);
+    left: clamp(9rem, 22vw, 25rem);
   }
 }
 
@@ -384,18 +385,18 @@ img {
   }
 
   .auth-visual {
-    bottom: 4rem;
+    bottom: 5rem;
     transform: scale(0.86);
   }
 }
 
 @media (min-width: 1536px) {
   .auth-main {
-    padding-right: clamp(14rem, 18vw, 25rem);
+    padding-right: clamp(12rem, 17vw, 23rem);
   }
 
   .auth-visual {
-    left: clamp(13rem, 23vw, 27rem);
+    left: clamp(15rem, 25vw, 29rem);
   }
 }
 

@@ -336,8 +336,8 @@ img {
   }
 
   .auth-visual {
-    left: clamp(14rem, 24vw, 31rem);
-    bottom: clamp(9rem, 22vh, 14rem);
+    left: clamp(10rem, 20vw, 27rem);
+    bottom: clamp(12rem, 28vh, 18rem);
     width: clamp(560px, 38vw, 720px);
     height: clamp(460px, 52vh, 590px);
     transform: translateX(0);
@@ -351,7 +351,7 @@ img {
   }
 
   .auth-visual {
-    left: clamp(15rem, 25vw, 31rem);
+    left: clamp(11rem, 21vw, 27rem);
   }
 }
 
@@ -385,7 +385,7 @@ img {
   }
 
   .auth-visual {
-    bottom: 4rem;
+    bottom: 6rem;
     transform: scale(0.86);
   }
 }
@@ -396,7 +396,7 @@ img {
   }
 
   .auth-visual {
-    left: clamp(18rem, 27vw, 33rem);
+    left: clamp(14rem, 23vw, 30rem);
   }
 }
 

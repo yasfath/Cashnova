@@ -18,9 +18,7 @@ python manage.py makemigrations
 python manage.py migrate
 
 ## 5. Run server
-
-python manage.py runserver
-
+ python manage.py runserver 127.0.0.1:8001  
 
 ```
 

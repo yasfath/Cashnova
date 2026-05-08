@@ -35,7 +35,7 @@ html {
 
 @media (min-width: 1024px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -335,7 +335,8 @@ img {
   }
 
   .auth-visual {
-    left: clamp(3rem, 9vw, 12rem);
+    left: clamp(6rem, 18vw, 22rem);
+    bottom: clamp(10rem, 24vh, 16rem);
     width: clamp(560px, 38vw, 720px);
     height: clamp(460px, 52vh, 590px);
     transform: translateX(0);
@@ -349,7 +350,7 @@ img {
   }
 
   .auth-visual {
-    left: clamp(7rem, 18vw, 22rem);
+    left: clamp(7rem, 21vw, 24rem);
   }
 }
 
@@ -383,7 +384,7 @@ img {
   }
 
   .auth-visual {
-    bottom: 1.25rem;
+    bottom: 4rem;
     transform: scale(0.86);
   }
 }
@@ -394,7 +395,7 @@ img {
   }
 
   .auth-visual {
-    left: clamp(15rem, 19vw, 24rem);
+    left: clamp(13rem, 23vw, 27rem);
   }
 }
 

@@ -1,3 +1,6 @@
+*.sqlite3
+db.sqlite3
+*.log
+__pycache__/
+*.pyc
 .env
-cashnova_backend/.env
-cashnova-frontend/.env

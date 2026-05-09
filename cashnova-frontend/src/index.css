@@ -404,15 +404,15 @@ img {
 @media (min-width: 1280px) {
   .auth-visual {
     bottom: auto;
-    left: clamp(24rem, 31vw, 40rem);
+    left: clamp(28rem, 36vw, 43rem);
     top: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.95);
   }
 }
 
 @media (min-width: 1536px) {
   .auth-visual {
-    left: clamp(30rem, 31vw, 42rem);
+    left: clamp(32rem, 36vw, 44rem);
   }
 }
 
@@ -420,7 +420,7 @@ img {
   .auth-visual {
     bottom: auto;
     top: 52%;
-    transform: translate(-50%, -50%) scale(0.78);
+    transform: translate(-50%, -50%) scale(0.86);
   }
 }
 

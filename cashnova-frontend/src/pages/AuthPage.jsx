@@ -550,11 +550,11 @@ function FinanceBackdrop() {
       <div className="absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(15,124,130,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(15,124,130,0.07)_1px,transparent_1px)] [background-size:38px_38px]" />
 
       <div className="auth-visual absolute hidden opacity-[0.9] xl:block">
-        <div className="absolute bottom-[82px] left-[155px] flex items-end gap-4">
-          {[82, 118, 158, 205, 255, 312].map((height, index) => (
+        <div className="absolute bottom-[76px] left-[150px] flex items-end gap-3">
+          {[92, 132, 178, 226, 282, 340].map((height, index) => (
             <span
               key={height}
-              className="relative w-9 rounded-t-[16px] border border-[#8ef3dd]/70 bg-[linear-gradient(180deg,rgba(28,224,178,0.94),rgba(15,124,130,0.82)_46%,rgba(0,83,154,0.76))] shadow-[0_0_24px_rgba(25,226,176,0.38),0_12px_28px_rgba(0,83,154,0.12)]"
+              className="relative w-10 rounded-t-[18px] border border-[#8ef3dd]/70 bg-[linear-gradient(180deg,rgba(28,224,178,0.94),rgba(15,124,130,0.82)_46%,rgba(0,83,154,0.76))] shadow-[0_0_24px_rgba(25,226,176,0.38),0_12px_28px_rgba(0,83,154,0.12)]"
               style={{ height: `${height}px`, opacity: 0.68 + index * 0.045 }}
             >
               <span className="absolute inset-x-2 top-3 h-10 rounded-full bg-white/20 blur-sm" />
@@ -562,7 +562,7 @@ function FinanceBackdrop() {
           ))}
         </div>
 
-        <svg className="absolute bottom-[118px] left-[78px] h-[320px] w-[515px]" viewBox="0 0 620 380" aria-hidden="true">
+        <svg className="absolute bottom-[118px] left-[62px] h-[352px] w-[560px]" viewBox="0 0 620 380" aria-hidden="true">
           <defs>
             <linearGradient id="authArrowGradient" x1="78" x2="566" y1="300" y2="30" gradientUnits="userSpaceOnUse">
               <stop stopColor="#075f8f" stopOpacity="0.7" />
@@ -622,11 +622,11 @@ function FinanceBackdrop() {
           </div>
         ))}
 
-        <div className="absolute bottom-[84px] left-[386px] h-[86px] w-[86px] [perspective:700px]">
-          <div className="standing-coin absolute inset-0 grid place-items-center rounded-full border-[5px] border-[#ffe994] bg-[radial-gradient(circle_at_32%_25%,#fff7b9,#d3a24c_54%,#8d5b06)] text-[40px] font-black text-white shadow-[0_16px_26px_rgba(141,91,6,0.24),0_0_26px_rgba(15,124,130,0.22),inset_0_4px_12px_rgba(255,255,255,0.58)]">
+        <div className="absolute bottom-[66px] left-[420px] h-[96px] w-[96px] [perspective:700px]">
+          <div className="standing-coin absolute inset-0 grid place-items-center rounded-full border-[5px] border-[#ffe994] bg-[radial-gradient(circle_at_32%_25%,#fff7b9,#d3a24c_54%,#8d5b06)] text-[44px] font-black text-white shadow-[0_16px_26px_rgba(141,91,6,0.24),0_0_26px_rgba(15,124,130,0.22),inset_0_4px_12px_rgba(255,255,255,0.58)]">
             {rupee}
           </div>
-          <span className="absolute bottom-[-9px] left-1/2 h-5 w-24 -translate-x-1/2 rounded-full bg-[#0f7c82]/16 blur-md" />
+          <span className="absolute bottom-[-9px] left-1/2 h-5 w-28 -translate-x-1/2 rounded-full bg-[#0f7c82]/16 blur-md" />
         </div>
 
       </div>

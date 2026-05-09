@@ -622,11 +622,11 @@ function FinanceBackdrop() {
           </div>
         ))}
 
-        <div className="absolute bottom-[54px] left-[430px] h-[96px] w-[96px] [perspective:700px]">
-          <div className="standing-coin absolute inset-0 grid place-items-center rounded-full border-[5px] border-[#ffe994] bg-[radial-gradient(circle_at_32%_25%,#fff7b9,#d3a24c_54%,#8d5b06)] text-[44px] font-black text-white shadow-[0_18px_28px_rgba(141,91,6,0.28),0_0_28px_rgba(15,124,130,0.26),inset_0_4px_12px_rgba(255,255,255,0.58)]">
+        <div className="absolute bottom-[84px] left-[386px] h-[86px] w-[86px] [perspective:700px]">
+          <div className="standing-coin absolute inset-0 grid place-items-center rounded-full border-[5px] border-[#ffe994] bg-[radial-gradient(circle_at_32%_25%,#fff7b9,#d3a24c_54%,#8d5b06)] text-[40px] font-black text-white shadow-[0_16px_26px_rgba(141,91,6,0.24),0_0_26px_rgba(15,124,130,0.22),inset_0_4px_12px_rgba(255,255,255,0.58)]">
             {rupee}
           </div>
-          <span className="absolute bottom-[-10px] left-1/2 h-5 w-28 -translate-x-1/2 rounded-full bg-[#0f7c82]/18 blur-md" />
+          <span className="absolute bottom-[-9px] left-1/2 h-5 w-24 -translate-x-1/2 rounded-full bg-[#0f7c82]/16 blur-md" />
         </div>
 
       </div>

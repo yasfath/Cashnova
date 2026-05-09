@@ -1,0 +1,28 @@
+# Environment and secrets
+.env
+*.env
+cashnova_backend/.env
+cashnova-frontend/.env
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+
+# Build output
+dist/
+build/
+staticfiles/
+
+# Python/Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+
+# Logs and local tooling
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
